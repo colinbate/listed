@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listed</title>
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+  </head>
+  <body>
+    <h1>Listed</h1>
+	<div id="userinfo"></div>
+    <p id="login"></p>
+    
+    <div id="content">
+      <ul id="ownedlists">
+      </ul>
+      <ul id="currentlist">
+      </ul>
+    </div>
+    
+    
+    
+    <div id="input">
+        <label for="content">Message: </label><input type="text" id="content">
+        <input type="submit" id="send" value="Add"/>
+    </div>
+
+    <script type="text/template" id="list-item-template">
+        <span class="list-item-check"><input type="checkbox" id="{{itemId}}"></span><label class="list-item-body" for="{{itemId}}">{{content}}</label>
+    </script>
+
+  </body>
+  <script type="text/javascript" src="js/sha1.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.couchLogin.min.js"></script>
+  <script type="text/javascript" src="js/jquery.couch.js"></script>
+  <script type="text/javascript" src="js/jquery.couchLogin.min.js"></script>
+  <script type="text/javascript" src="js/underscore.js"></script>
+  <script type="text/javascript" src="js/backbone.js"></script>
+  <script type="text/javascript" src="js/backbone-couchdb.js"></script>
+  <script type="text/javascript" src="js/listed.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    
+  </script>
+</html>
